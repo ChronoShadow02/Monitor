@@ -12,19 +12,20 @@ namespace Monitor
 {
     public partial class Monitor : Form
     {
-        public List<string> subdominio_stripchat = new List<string>();
-
+        /// <summary>
+        /// Constructor de la clase
+        /// </summary>
         public Monitor()
         {
             InitializeComponent();
             ChangeAttributesGridView();
-            fillCmbSites();
+            FillCmbSites();
         }
 
         /// <summary>
         /// Llena el combobox de los sitios
         /// </summary>
-        void fillCmbSites()
+        void FillCmbSites()
         {
             //Carga los sitios del combobox
             cmbSites.Items.Add("Chaturbate");
@@ -42,7 +43,7 @@ namespace Monitor
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void BtnAdd_Click(object sender, EventArgs e)
         {
             ///valida si el campo de la sala esta vacio
             if (string.IsNullOrEmpty(txtAddRoom.Text))
@@ -71,7 +72,7 @@ namespace Monitor
             txtAddRoom.Text = string.Empty;
         }
 
-        private void btnRemove_Click(object sender, EventArgs e)
+        private void BtnRemove_Click(object sender, EventArgs e)
         {
             if (true)
             {
@@ -89,6 +90,9 @@ namespace Monitor
             }
         }
 
+        /// <summary>
+        /// Metodo que cambia los atributos del gridview
+        /// </summary>
         void ChangeAttributesGridView()
         {
             GrdRooms.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;

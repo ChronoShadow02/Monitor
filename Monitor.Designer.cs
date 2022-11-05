@@ -32,8 +32,8 @@ namespace Monitor
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Monitor));
             this.tabControlMonitoreo = new System.Windows.Forms.TabControl();
             this.TabPage1 = new System.Windows.Forms.TabPage();
-            this.btnRemove = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
+            this.BtnRemove = new System.Windows.Forms.Button();
+            this.BtnAdd = new System.Windows.Forms.Button();
             this.cmbSites = new System.Windows.Forms.ComboBox();
             this.txtAddRoom = new System.Windows.Forms.TextBox();
             this.lblAddRoom = new System.Windows.Forms.Label();
@@ -59,8 +59,8 @@ namespace Monitor
             // 
             // TabPage1
             // 
-            this.TabPage1.Controls.Add(this.btnRemove);
-            this.TabPage1.Controls.Add(this.btnAdd);
+            this.TabPage1.Controls.Add(this.BtnRemove);
+            this.TabPage1.Controls.Add(this.BtnAdd);
             this.TabPage1.Controls.Add(this.cmbSites);
             this.TabPage1.Controls.Add(this.txtAddRoom);
             this.TabPage1.Controls.Add(this.lblAddRoom);
@@ -73,27 +73,27 @@ namespace Monitor
             this.TabPage1.Text = "Monitoring";
             this.TabPage1.UseVisualStyleBackColor = true;
             // 
-            // btnRemove
+            // BtnRemove
             // 
-            this.btnRemove.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnRemove.Location = new System.Drawing.Point(574, 43);
-            this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(92, 33);
-            this.btnRemove.TabIndex = 5;
-            this.btnRemove.Text = "Remove";
-            this.btnRemove.UseVisualStyleBackColor = true;
-            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
+            this.BtnRemove.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.BtnRemove.Location = new System.Drawing.Point(574, 43);
+            this.BtnRemove.Name = "BtnRemove";
+            this.BtnRemove.Size = new System.Drawing.Size(92, 33);
+            this.BtnRemove.TabIndex = 5;
+            this.BtnRemove.Text = "Remove";
+            this.BtnRemove.UseVisualStyleBackColor = true;
+            this.BtnRemove.Click += new System.EventHandler(this.BtnRemove_Click);
             // 
-            // btnAdd
+            // BtnAdd
             // 
-            this.btnAdd.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnAdd.Location = new System.Drawing.Point(459, 43);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(92, 33);
-            this.btnAdd.TabIndex = 4;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.BtnAdd.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.BtnAdd.Location = new System.Drawing.Point(459, 43);
+            this.BtnAdd.Name = "BtnAdd";
+            this.BtnAdd.Size = new System.Drawing.Size(92, 33);
+            this.BtnAdd.TabIndex = 4;
+            this.BtnAdd.Text = "Add";
+            this.BtnAdd.UseVisualStyleBackColor = true;
+            this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // cmbSites
             // 
@@ -207,8 +207,8 @@ namespace Monitor
 
         private System.Windows.Forms.TabControl tabControlMonitoreo;
         private System.Windows.Forms.TabPage TabPage1;
-        private System.Windows.Forms.Button btnRemove;
-        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button BtnRemove;
+        private System.Windows.Forms.Button BtnAdd;
         private System.Windows.Forms.ComboBox cmbSites;
         private System.Windows.Forms.TextBox txtAddRoom;
         private System.Windows.Forms.Label lblAddRoom;
