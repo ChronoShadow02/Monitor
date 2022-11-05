@@ -17,9 +17,7 @@ namespace Monitor
         public Monitor()
         {
             InitializeComponent();
-            GrdRooms.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
-            GrdRooms.AllowUserToResizeColumns = false;
-            GrdRooms.AllowUserToResizeRows = false;
+            ChangeAttributesGridView();
             fillCmbSites();
         }
 
@@ -89,6 +87,13 @@ namespace Monitor
                     this.Close();
                 }
             }
+        }
+
+        void ChangeAttributesGridView()
+        {
+            GrdRooms.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+            GrdRooms.AllowUserToResizeColumns = false;
+            GrdRooms.AllowUserToResizeRows = false;
         }
     }
 }
